@@ -1,1 +1,61 @@
-README.textile
+h1. 概要
+
+Unityの "ネットワークサンプル":http://unity3d.com/support/resources/example-projects/networking-example.html を簡略化したもです。
+ThirdPersonControllerの同期、キューブの生成と同期を行なっています。
+
+ !https://github.com/anchan828/file-place/raw/master/unity-network-main.png! 
+ 
+h1. マスターサーバーを走らせる
+
+ネットワークのサンプルを動かすにはマスターサーバーを立てる必要があります。
+まずは "Unity Networking Servers":http://unity3d.com/master-server/index.html からMaster Serverをクリックしプロジェクトをダウンロードします。
+
+ !https://github.com/anchan828/file-place/raw/master/masterserverfolder.png! 
+ 
+MasterServer-2.0.1f1の中身
+
+* MacOSXの場合
+#  xcodeフォルダの中のプロジェクトを起動。
+# 「Compiler for C/C++/Objective-C」で「LLVM GCC 4.2」を選択。
+#  Runでマスターサーバーを走らせる。
+
+* Windowsの場合
+# VisualStudioフォルダの中のプロジェクトを起動。
+# ビルドをしプロジェクトフォルダ内にできる「Debug」フォルダの「MasterServer.exe」をダブルクリックしてマスターサーバーを走らせる。
+
+
+h1. マスターサーバーへの接続
+
+Unityプロジェクトを開き「Prefab/ConnectionGUI」に付加されている「ConnectGuiMasterServer」の「Ip Address」をプライベートIPアドレスに変更する。
+
+ !https://github.com/anchan828/file-place/raw/master/connectgui.png! 
+
+# ここでプラットフォーム「スタンドアローン」を選択してビルドする。そしてアプリを起動。
+# 片方のゲームビューの「サーバーコンソール」から「サーバー起動」を選択しサーバーを走らせ、「Third Person」をクリックする。
+# 残りのもう片方は一度「サーバーコンソール」の「リフレッシュ」を押す。
+すると下のようなウィンドウが現れる。
+
+ !https://github.com/anchan828/file-place/raw/master/gameviewconnect.png! 
+ 
+「接続」ボタンを押すと「Third Person」のシーンへ移動する。
+
+これで同期は取れてますので「Lerpz」を動かしまくりましょう
+
+h1. キューブの生成
+
+本家のサンプルでは少しごちゃごちゃしていてわかりにくかったので、
+こちらでRigidbodyの付いたキューブを生成するコードを書いてみました。（zでキューブ生成）
+
+多少はわかりやすいはず...
+
+キューブを生成するアクションを起こすコードは「Scripts/ThirdPersonAction」に記述しています。
+
+Network.Instantiateで生成するというもの。
+
+「Prefab/Cube」が生成されるオブジェクトです。「NetworkView」をつけることでIDが割り当てられ、管理をすることができます。
+
+「NetworkRigidbody」をつけることによって物理演算処理の同期をとることができます。
+
+生成するオブジェクトがRigidbodyでない場合は「NetworkInterpolatedTransform」を付加させましょう（たぶん）
+
+ 
