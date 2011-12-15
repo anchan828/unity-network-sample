@@ -1,0 +1,336 @@
+fileFormatVersion: 1
+guid: 4a461e42cd11fe64a0002e294ada8c59
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 1
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 0
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+    clips:
+      walk:
+        firstFrame: 1
+        lastFrame: 33
+        loop: 0
+        wrapMode: 0
+      run:
+        firstFrame: 41
+        lastFrame: 57
+        loop: 0
+        wrapMode: 0
+      kick:
+        firstFrame: 81
+        lastFrame: 97
+        loop: 0
+        wrapMode: 0
+      punch:
+        firstFrame: 101
+        lastFrame: 117
+        loop: 0
+        wrapMode: 0
+      jump:
+        firstFrame: 121
+        lastFrame: 129
+        loop: 0
+        wrapMode: 0
+      jumpfall:
+        firstFrame: 149
+        lastFrame: 157
+        loop: 0
+        wrapMode: 0
+      idle:
+        firstFrame: 201
+        lastFrame: 401
+        loop: 0
+        wrapMode: 0
+      gotbit:
+        firstFrame: 411
+        lastFrame: 419
+        loop: 0
+        wrapMode: 0
+      gothit:
+        firstFrame: 421
+        lastFrame: 429
+        loop: 0
+        wrapMode: 0
+      walljump:
+        firstFrame: 431
+        lastFrame: 448
+        loop: 0
+        wrapMode: 0
+      deathfall:
+        firstFrame: 451
+        lastFrame: 459
+        loop: 0
+        wrapMode: 0
+      jetpackjump:
+        firstFrame: 149
+        lastFrame: 150
+        loop: 0
+        wrapMode: 0
+      ledgefall:
+        firstFrame: 149
+        lastFrame: 150
+        loop: 0
+        wrapMode: 0
+      buttstomp:
+        firstFrame: 137
+        lastFrame: 145
+        loop: 0
+        wrapMode: 0
+      jumpland:
+        firstFrame: 161
+        lastFrame: 177
+        loop: 0
+        wrapMode: 0
+  nodeInfo:
+    Lerpz:
+    - 100000
+    - 400000
+    rootJoint:
+    - 100002
+    - 400002
+    - 13700000
+    torso:
+    - 100004
+    - 400004
+    shoulders:
+    - 100006
+    - 400006
+    shoulderRight:
+    - 100008
+    - 400008
+    elbowRight:
+    - 100010
+    - 400010
+    wristRight:
+    - 100012
+    - 400012
+    handRight:
+    - 100014
+    - 400014
+    thumbRight1:
+    - 100016
+    - 400016
+    thumbRight2:
+    - 100018
+    - 400018
+    thumbRight3:
+    - 100020
+    - 400020
+    pinkyFingerRight1:
+    - 100022
+    - 400022
+    pinkyFingerRight2:
+    - 100024
+    - 400024
+    pinkyFingerRight3:
+    - 100026
+    - 400026
+    pinkyFingerRight4:
+    - 100028
+    - 400028
+    middleFingerRight1:
+    - 100030
+    - 400030
+    middleFingerRight2:
+    - 100032
+    - 400032
+    middleFingerRight3:
+    - 100034
+    - 400034
+    middleFingerRight4:
+    - 100036
+    - 400036
+    indexFingerRight1:
+    - 100038
+    - 400038
+    indexFingerRight2:
+    - 100040
+    - 400040
+    indexFingerRight3:
+    - 100042
+    - 400042
+    indexFingerRight4:
+    - 100044
+    - 400044
+    shoulderLeft:
+    - 100046
+    - 400046
+    elbowLeft:
+    - 100048
+    - 400048
+    wristLeft:
+    - 100050
+    - 400050
+    handLeft:
+    - 100052
+    - 400052
+    thumbLeft1:
+    - 100054
+    - 400054
+    thumbLeft2:
+    - 100056
+    - 400056
+    thumbLeft3:
+    - 100058
+    - 400058
+    pinkyFingerLeft1:
+    - 100060
+    - 400060
+    pinkyFingerLeft2:
+    - 100062
+    - 400062
+    pinkyFingerLeft3:
+    - 100064
+    - 400064
+    pinkyFingerLeft4:
+    - 100066
+    - 400066
+    middleFingerLeft1:
+    - 100068
+    - 400068
+    middleFingerLeft2:
+    - 100070
+    - 400070
+    middleFingerLeft3:
+    - 100072
+    - 400072
+    middleFingerLeft4:
+    - 100074
+    - 400074
+    indexFingerLeft1:
+    - 100076
+    - 400076
+    indexFingerLeft2:
+    - 100078
+    - 400078
+    indexFingerLeft3:
+    - 100080
+    - 400080
+    indexFingerLeft4:
+    - 100082
+    - 400082
+    head:
+    - 100084
+    - 400084
+    aNTeNNa_trEE:
+    - 100086
+    - 400086
+    antennaRight1:
+    - 100088
+    - 400088
+    antennaRight2:
+    - 100090
+    - 400090
+    antennaRight3:
+    - 100092
+    - 400092
+    antennaLeft1:
+    - 100094
+    - 400094
+    antennaLeft2:
+    - 100096
+    - 400096
+    antennaLeft3:
+    - 100098
+    - 400098
+    mouthRight1:
+    - 100100
+    - 400100
+    mouthRight2:
+    - 100102
+    - 400102
+    mouthTop1:
+    - 100104
+    - 400104
+    mouthTop2:
+    - 100106
+    - 400106
+    mouthLeft1:
+    - 100108
+    - 400108
+    mouthLeft2:
+    - 100110
+    - 400110
+    mouthBottom1:
+    - 100112
+    - 400112
+    mouthBottom2:
+    - 100114
+    - 400114
+    hipRight:
+    - 100116
+    - 400116
+    kneeRight:
+    - 100118
+    - 400118
+    ankleRight:
+    - 100120
+    - 400120
+    footRight:
+    - 100122
+    - 400122
+    toeRight:
+    - 100124
+    - 400124
+    toeRightTip:
+    - 100126
+    - 400126
+    hipLeft:
+    - 100128
+    - 400128
+    kneeLeft:
+    - 100130
+    - 400130
+    ankleLeft:
+    - 100132
+    - 400132
+    footLeft:
+    - 100134
+    - 400134
+    toeLeft:
+    - 100136
+    - 400136
+    toeLeftTip:
+    - 100138
+    - 400138
+    //RootNode:
+    - 100140
+    - 400140
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: Lerpz
+    7400000: Take 001 //// Lerpz
+    7400002: walk //// Lerpz
+    7400004: run //// Lerpz
+    7400006: kick //// Lerpz
+    7400008: punch //// Lerpz
+    7400010: jump //// Lerpz
+    7400012: jumpfall //// Lerpz
+    7400014: idle //// Lerpz
+    7400016: gotbit //// Lerpz
+    7400018: gothit //// Lerpz
+    7400020: walljump //// Lerpz
+    7400022: deathfall //// Lerpz
+    7400024: jumpcapefly //// Lerpz
+    7400026: ledgefall //// Lerpz
+    7400028: buttstomp //// Lerpz
+    7400030: jumpland //// Lerpz
+    7400032: jetpackjump //// Lerpz
