@@ -1,61 +1,61 @@
-h1. 概要
+h1. �T�v
 
-Unityの "ネットワークサンプル":http://unity3d.com/support/resources/example-projects/networking-example.html を簡略化したもです。
-ThirdPersonControllerの同期、キューブの生成と同期を行なっています。
+Unity�� "�l�b�g���[�N�T���v��":http://unity3d.com/support/resources/example-projects/networking-example.html ���ȗ����������ł��B
+ThirdPersonController�̓����A�L���[�u�̐����Ɠ������s�Ȃ��Ă��܂��B
 
  !https://github.com/anchan828/file-place/raw/master/unity-network-main.png! 
  
-h1. マスターサーバーを走らせる
+h1. �}�X�^�[�T�[�o�[�𑖂点��
 
-ネットワークのサンプルを動かすにはマスターサーバーを立てる必要があります。
-まずは "Unity Networking Servers":http://unity3d.com/master-server/index.html からMaster Serverをクリックしプロジェクトをダウンロードします。
+�l�b�g���[�N�̃T���v���𓮂����ɂ̓}�X�^�[�T�[�o�[�𗧂Ă�K�v������܂��B
+�܂��� "Unity Networking Servers":http://unity3d.com/master-server/index.html ����Master Server���N���b�N���v���W�F�N�g���_�E�����[�h���܂��B
 
  !https://github.com/anchan828/file-place/raw/master/masterserverfolder.png! 
  
-MasterServer-2.0.1f1の中身
+MasterServer-2.0.1f1�̒��g
 
-* MacOSXの場合
-#  xcodeフォルダの中のプロジェクトを起動。
-# 「Compiler for C/C++/Objective-C」で「LLVM GCC 4.2」を選択。
-#  Runでマスターサーバーを走らせる。
+* MacOSX�̏ꍇ
+#  xcode�t�H���_�̒��̃v���W�F�N�g���N���B
+# �uCompiler for C/C++/Objective-C�v�ŁuLLVM GCC 4.2�v��I���B
+#  Run�Ń}�X�^�[�T�[�o�[�𑖂点��B
 
-* Windowsの場合
-# VisualStudioフォルダの中のプロジェクトを起動。
-# ビルドをしプロジェクトフォルダ内にできる「Debug」フォルダの「MasterServer.exe」をダブルクリックしてマスターサーバーを走らせる。
+* Windows�̏ꍇ
+# VisualStudio�t�H���_�̒��̃v���W�F�N�g���N���B
+# �r���h�����v���W�F�N�g�t�H���_���ɂł���uDebug�v�t�H���_�́uMasterServer.exe�v���_�u���N���b�N���ă}�X�^�[�T�[�o�[�𑖂点��B
 
 
-h1. マスターサーバーへの接続
+h1. �}�X�^�[�T�[�o�[�ւ̐ڑ�
 
-Unityプロジェクトを開き「Prefab/ConnectionGUI」に付加されている「ConnectGuiMasterServer」の「Ip Address」をプライベートIPアドレスに変更する。
+Unity�v���W�F�N�g���J���uPrefab/ConnectionGUI�v�ɕt������Ă���uConnectGuiMasterServer�v�́uIp Address�v���v���C�x�[�gIP�A�h���X�ɕύX����B
 
  !https://github.com/anchan828/file-place/raw/master/connectgui.png! 
 
-# ここでプラットフォーム「スタンドアローン」を選択してビルドする。そしてアプリを起動。
-# 片方のゲームビューの「サーバーコンソール」から「サーバー起動」を選択しサーバーを走らせ、「Third Person」をクリックする。
-# 残りのもう片方は一度「サーバーコンソール」の「リフレッシュ」を押す。
-すると下のようなウィンドウが現れる。
+# �����Ńv���b�g�t�H�[���u�X�^���h�A���[���v��I�����ăr���h����B�����ăA�v�����N���B
+# �Е��̃Q�[���r���[�́u�T�[�o�[�R���\�[���v����u�T�[�o�[�N���v��I�����T�[�o�[�𑖂点�A�uThird Person�v���N���b�N����B
+# �c��̂����Е��͈�x�u�T�[�o�[�R���\�[���v�́u���t���b�V���v�������B
+����Ɖ��̂悤�ȃE�B���h�E�������B
 
  !https://github.com/anchan828/file-place/raw/master/gameviewconnect.png! 
  
-「接続」ボタンを押すと「Third Person」のシーンへ移動する。
+�u�ڑ��v�{�^���������ƁuThird Person�v�̃V�[���ֈړ�����B
 
-これで同期は取れてますので「Lerpz」を動かしまくりましょう
+����œ����͎��Ă܂��̂ŁuLerpz�v�𓮂����܂���܂��傤
 
-h1. キューブの生成
+h1. �L���[�u�̐���
 
-本家のサンプルでは少しごちゃごちゃしていてわかりにくかったので、
-こちらでRigidbodyの付いたキューブを生成するコードを書いてみました。（zでキューブ生成）
+�{�Ƃ̃T���v���ł͏��������Ⴒ���Ⴕ�Ă��Ă킩��ɂ��������̂ŁA
+�������Rigidbody�̕t�����L���[�u�𐶐�����R�[�h�������Ă݂܂����B�iz�ŃL���[�u�����j
 
-多少はわかりやすいはず...
+�����͂킩��₷���͂�...
 
-キューブを生成するアクションを起こすコードは「Scripts/ThirdPersonAction」に記述しています。
+�L���[�u�𐶐�����A�N�V�������N�����R�[�h�́uScripts/ThirdPersonAction�v�ɋL�q���Ă��܂��B
 
-Network.Instantiateで生成するというもの。
+Network.Instantiate�Ő�������Ƃ������́B
 
-「Prefab/Cube」が生成されるオブジェクトです。「NetworkView」をつけることでIDが割り当てられ、管理をすることができます。
+�uPrefab/Cube�v�����������I�u�W�F�N�g�ł��B�uNetworkView�v�����邱�Ƃ�ID�����蓖�Ă��A�Ǘ������邱�Ƃ��ł��܂��B
 
-「NetworkRigidbody」をつけることによって物理演算処理の同期をとることができます。
+�uNetworkRigidbody�v�����邱�Ƃɂ���ĕ������Z�����̓������Ƃ邱�Ƃ��ł��܂��B
 
-生成するオブジェクトがRigidbodyでない場合は「NetworkInterpolatedTransform」を付加させましょう（たぶん）
+��������I�u�W�F�N�g��Rigidbody�łȂ��ꍇ�́uNetworkInterpolatedTransform�v��t�������܂��傤�i���Ԃ�j
 
  
