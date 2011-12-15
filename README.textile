@@ -28,7 +28,7 @@ h5. Windowsの場合
 
 h1. マスターサーバーへの接続
 
-Unityプロジェクトを開き「Prefab/ConnectionGUI」に付加されている「ConnectGuiMasterServer」の「Ip Address」をプライベートIPアドレスに変更する。
+「Scene/loader」をクリックしてUnityプロジェクトを開き「Prefab/ConnectionGUI」に付加されている「ConnectGuiMasterServer」の「Ip Address」をプライベートIPアドレスに変更する。
 
  !https://github.com/anchan828/file-place/raw/master/connectgui.png! 
 
